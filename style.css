@@ -3,4 +3,191 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    list-style: none;
+}
+
+/* Styly pro header a logo */
+.header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Styly pro navigační menu */
+.top-nav {
+    display: flex;
+    align-items: center;
+}
+
+.top-nav-ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav-ul-li {
+    margin: 0 15px;
+}
+
+.top-nav-ul-li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover efekt pro odkazy v menu */
+.top-nav-ul-li a:hover {
+    text-decoration: underline;
+}
+
+/* Rozložení textu a obrázku */
+.main-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-content-content-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.main-content-header, .main-content-content {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 0px 30px;
+} 
+
+.main-image-container {
+    width: 50%; 
+}
+
+.main-image-container img {
+    max-width: 100%;
+}
+
+/* Button */
+.main-content-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.main-content-btn button {
+    background-color: rgb(42, 119, 214);
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 15px;
+    border: 2px solid black;
+    cursor: pointer;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.main-content-btn button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+
+/* Main content - rozložení */
+.content-header {
+    text-align: center;
+    padding: 50px;
+}
+
+.content-display-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
+
+.content-display {
+    width: 20%;
+}
+
+.content-display-header {
+    margin-bottom: 20px;
+}
+
+/* Styly pro kontejner formuláře */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.form-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Styly pro záhlaví formuláře */
+.form-header h1 {
+    font-size: 24px;
+}
+
+.form-header pre {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Styly pro samotný formulář */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Styly pro footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
 }
