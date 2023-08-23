@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo">
+                <h1><a href="https://mart1nekk1.github.io/Website/">Martin Klobása</a></h1>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav-content">
+                <nav class="top-nav">
+                    <ul class="top-nav-ul">
+                        <li class="top-nav-ul-li"><a href="https://mart1nekk1.github.io/Website/">ÚVOD</a></li>
+                        <li class="top-nav-ul-li"><a href="#">SLUŽBY</a></li>
+                        <li class="top-nav-ul-li"><a href="https://mart1nekk1.github.io/Website#form-section">KONTAKT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="contact-container">
+            <div class="content-header">
+                <h1>Kontaktujte nás</h1>
+                <h4>Zaujali vás naše služby?<br> Kontaktujte nás a my se vám ozveme</h4>
+            </div>
+            <div class="form-content">
+                <form action="https://formsubmit.co/klmartin222@email.cz" method="POST">
+                    <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display: none;">
+                    <!-- Disabled Captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Success page -->
+                    <input type="hidden" name="_next" value="https://mart1nekk1.github.io/Website/success.html">
+                    <!-- Contact form -->
+                    <input type="text" name="Name" placeholder="Jméno a Příjmení" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <textarea name="Message" cols="30" rows="10" placeholder="Napište nám zprávu"required></textarea>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>
+                &copy; 2023 Martin Klobása
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
